@@ -1,0 +1,126 @@
+.adContainer {
+    height: 45vh;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.adContainer > .adBox {
+    width: 60%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.adContainer > .adBox > .selectMatchContainer {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9fa1a9;
+    position: relative;
+    left: 5rem
+}
+
+.adContainer > .adBox > .selectMatchContainer > .selectMatchBtn {
+    width: 95%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    padding-left: 0.8rem;
+}
+
+.adContainer > .adBox > .selectMatchContainer > .selectMatchBtn:hover {
+    background-color: gray;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.adContainer > .adBox > .selectMatchContainer > .selectMatchBtn  > .svg-inline--fa {
+    margin-right: 0.5rem;
+}
+
+.adContainer > .adBox > .gosuIntroContainer {
+    width: 100%;
+    height: 100%;
+    margin-left: 3rem;
+
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper {
+    height: 100%;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-button-prev {
+    --swiper-theme-color: #FFFFFF;
+    --swiper-navigation-size: 1.5rem;
+    background-color: #E6E6E8;
+    left: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-button-next {
+    --swiper-theme-color: #FFFFFF;
+    --swiper-navigation-size: 1.5rem;
+    background-color: #E6E6E8;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-wrapper > .swiper-slide {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active > .profileContainer {
+    margin-left: 7rem;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-next ~.swiper-slide > .profileContainer {
+    margin-right: 7rem;
+} 
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-wrapper > .swiper-slide > .profileContainer {
+    background-color:#FFFFFF;
+    width: 70%;
+    height: 80%;
+    border: 1px solid;
+    border-radius: 0.45rem;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-wrapper > .swiper-slide > .profileContainer > .profileLink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-wrapper > .swiper-slide > .profileContainer > .profileLink > .jobLogo {
+    width: 100%;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.adContainer > .adBox > .gosuIntroContainer > .swiper > .swiper-wrapper > .swiper-slide > .profileContainer > .profileLink > .jobDescrip {
+    color: #121212;
+    width: 80%;
+}
+

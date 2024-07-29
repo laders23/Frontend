@@ -1,0 +1,308 @@
+.commuContainer {
+    height: 47vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.commuContainer > .commuTitleBox {
+    width: 65%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commuContainer > .commuTitleBox > .commuTitle > span:nth-child(1) {
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.commuContainer > .commuTitleBox > .commuLink > a {
+    color: #121212;
+    text-decoration: none;
+}
+
+.commuContainer > .commuPostBox {
+    width: 65%;
+    height: 70%;
+}
+
+.commuContainer > .commuPostBox > .swiper {
+    width: 90%;
+    height: 100%;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer {
+    width: 65%;
+    height: 15rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer > .postText {
+    font-size: 0.85rem;
+    width: 70%;
+    height: 8rem;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer > .postInfo {
+    width: 70%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer > .postInfo > .postAge {
+    background-color: #121212;
+    width: 3rem;
+    height: 1.8rem;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+/* 이 아래 부터는 추후 수정해야함 */
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide:nth-child(1) > .postContainer > .postInfo > .postCompany {
+    width: auto;
+    padding: 0 0.5rem 0 0.5rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    background-color: #2DB400;
+    margin-left: 0.5rem;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide:nth-child(2) > .postContainer > .postInfo > .postCompany {
+    width: auto;
+    padding: 0 0.5rem 0 0.5rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    background-color: #F9E000;
+    margin-left: 0.5rem;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide:nth-child(3) > .postContainer > .postInfo > .postCompany {
+    width: auto;
+    padding: 0 0.5rem 0 0.5rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    background-color: #00C6BE;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+}
+
+/* ====================이까지======================== */
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active > .postContainer {
+    margin-left: 7rem;
+
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-next ~.swiper-slide > .postContainer {
+    margin-right: 7rem;
+} 
+
+.commuContainer > .commuPostBox > .swiper > .swiper-button-prev {
+    --swiper-theme-color: #FFFFFF;
+    --swiper-navigation-size: 1.5rem;
+    background-color: #E6E6E8;
+    left: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+.commuContainer > .commuPostBox > .swiper > .swiper-button-next {
+    --swiper-theme-color: #FFFFFF;
+    --swiper-navigation-size: 1.5rem;
+    background-color: #E6E6E8;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+/* ======================================================= */
+
+.chatContainer {
+    height: 47vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.chatContainer > .chatTitleBox {
+    width: 65%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatContainer > .chatTitleBox > .chatTitle > span {
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.chatContainer > .chatTitleBox > .chatTitle > span > span {
+    color: #8A91A5;
+}
+
+.chatContainer > .chatTitleBox > .chatLink > a {
+    color: #121212;
+    text-decoration: none;
+}
+
+.chatContainer > .chatRoomBox {
+    width: 65%;
+    height: 70%;
+}
+
+.chatContainer > .chatRoomBox > .swiper {
+    width: 90%;
+    height: 100%;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer {
+    width: 65%;
+    height: 15rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatRoomTitle {
+    width: auto;
+    height: 3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatText {
+    font-size: 0.85rem;
+    width: 70%;
+    height: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox > .peopleNum {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox > .chatBtn {
+    width: 8rem;
+    height: 2rem;
+    background-color: #0064FF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    color: #FFFFFF;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox > .chatBtn:hover {
+    background-color: #6CA1EF;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active > .chatRoomContainer {
+    margin-left: 7rem;
+
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-next ~.swiper-slide > .chatRoomContainer {
+    margin-right: 7rem;
+} 
+
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-button-prev {
+    --swiper-theme-color: #FFFFFF;
+    --swiper-navigation-size: 1.5rem;
+    background-color: #E6E6E8;
+    left: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+ }
+
+ .chatContainer > .chatRoomBox > .swiper > .swiper-button-next {
+    --swiper-theme-color: #FFFFFF;
+    --swiper-navigation-size: 1.5rem;
+    background-color: #E6E6E8;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+}
