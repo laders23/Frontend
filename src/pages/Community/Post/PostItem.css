@@ -1,0 +1,74 @@
+.post-item {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.post-item:hover {
+  background-color: #f1f8ff;
+  transition: 0.6s;
+}
+
+.post-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-item h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left; /* 제목을 왼쪽 정렬 */
+}
+
+.post-item h2 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.post-item h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-item p {
+  margin: 0 0 10px;
+  color: #666;
+  text-align: left;
+}
+
+.ellipsis {
+  color: #999;
+}
+
+.more {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #999;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
