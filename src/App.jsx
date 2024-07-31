@@ -1,21 +1,25 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
 import React from "react";
-import Header from "../src/components/Header";
-import Index from "../src/pages/Index";
-import IndexBody from "../src/pages/IndexBody";
-import IndexFooter from "../src/pages/IndexFooter";
+import MainPage from "../src/pages/MainPage";
+import Register from "../src/pages/Register";
+import RegisterDetail from "./pages/RegisterDetail";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 function App() {
   // const [count, setCount] = useState(0)
   return (
     <React.Fragment>
-    <Header />
-    <Index />
-    <IndexBody />
-    <IndexFooter />
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage/>} />
+      </Routes>
+      <Routes>
+        <Route path="/register" element={<Register/>} />
+      </Routes>
+      <Routes>
+        <Route path="/registerDetail" element={<RegisterDetail />} />
+      </Routes>
+    </Router>
   </React.Fragment>
   )
 }

@@ -1,0 +1,196 @@
+.reg__all__container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.reg__all__container > .register__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg__all__container > .register__container > .register__box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: 8rem;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.reg__all__container > .register__container > .register__box > .register__item > .meetpro__register__btn {
+    width: 70%;
+    height: 2.3rem;
+    background-color: #FFFFFF;
+    border-radius: 0.3rem;
+    margin: 1.2rem 0 0.6rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    border: 1px solid #2d65f2;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .meetpro__register__btn:hover {
+    cursor: pointer;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .meetpro__register__btn > a {
+    color: #2d65f2;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .reg__item__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .reg__item__title > span {
+    color: #121212;
+    font-size: 1.25rem;
+    font-weight: 800;
+    border-top: 3px solid #0064FF;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .reg__social__line__box {
+    width: 70%;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .reg__social__line__box > .line__title {
+    white-space: nowrap;
+    font-size: 0.75rem;
+    color: #5c667b;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .reg__social__line__box > .social__line:nth-child(1) {
+    width: 3rem;
+    height: 1px;
+    border-top: 2px solid #eaedf4;
+    margin-right: 0.6rem;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .reg__social__line__box > .social__line:nth-child(3) {
+    width: 3rem;
+    height: 1px;
+    border-top: 2px solid #eaedf4;
+    margin-left: 0.6rem;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .social__logo__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 2rem;
+    margin-top: 1rem;
+
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .social__logo__container > div > .category__logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    border-radius: 5rem;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .social__logo__container > div > .category__logo:hover {
+    cursor: pointer;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .exist__login__box {
+    margin-top: 2rem;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .exist__login__box > .exist__login {
+    color: #5c667b;
+    font-size: 0.7rem;
+}
+
+.reg__all__container > .register__container > .register__box > .register__item > .exist__login__box > .exist__login > .login__btn {
+    color: #121212;
+    border-bottom: 1px solid #121212;
+    cursor: pointer;
+}
+
+.reg__all__container > .register__container > .ad__box {
+    width: 50%;
+    height: 100%;
+    background-color: #deebff;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper {
+    width: 100%;
+    height: 85%;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-wrapper > .swiper-slide > .ad__slide__container {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-wrapper > .swiper-slide > .ad__slide__container >.ad__big__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-wrapper > .swiper-slide > .ad__slide__container >.ad__big__title > span {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-wrapper > .swiper-slide > .ad__slide__container >.ad__big__title > span > span {
+    color: #4876ef;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-button-prev {
+    display: none;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-button-next {
+    display: none;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-wrapper > .swiper-slide > .ad__slide__container > .ad__sub__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+    line-height: 1.6rem;
+}
+
+.reg__all__container > .register__container > .ad__box > .swiper > .swiper-wrapper > .swiper-slide > .ad__slide__container > .ad__sub__title > span {
+    color: #5c667b;
+}
+
