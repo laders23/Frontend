@@ -1,17 +1,15 @@
-import Header from "/src/components/Header"
-import Index from "/src/pages/Index";
-import IndexBody from "/src/pages/IndexBody";
-import IndexFooter from "/src/pages/IndexFooter";
+import Index from "./Index";
+import IndexBody from "./IndexBody";
+import IndexFooter from "./IndexFooter";
 
 function MainPage() {
-    return(
-        <>
-            <Header />
-            <Index />
-            <IndexBody />
-            <IndexFooter />
-        </>
-    )
+	return (
+		<>
+			<Index />
+			<IndexBody />
+			<IndexFooter />
+		</>
+	);
 }
 
 export default MainPage;

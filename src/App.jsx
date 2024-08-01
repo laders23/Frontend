@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Index from "./pages/Index";
-import IndexBody from "./pages/IndexBody";
-import IndexFooter from "./pages/IndexFooter";
+import MainPage from "./pages/MainPage";
+import Register from "./pages/Register";
+import RegisterDetail from "./pages/RegisterDetail";
+import OpenChat from "./pages/OpenChat";
 import Mypage from "./pages/Mypage/App";
 import Community from "./pages/Community/App";
 

@@ -2,7 +2,6 @@ import "../stylesheets/Common.css";
 import "../stylesheets/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import logo from "../images/Preview.jpg";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -12,9 +11,7 @@ function Header() {
 				<ul className="ulContainer">
 					<div className="logoBox">
 						<li>
-							<a href="#">
-								<img src={logo}></img>
-							</a>
+							<a href="#">{/* <img src={logo}></img> */}</a>
 						</li>
 						<li>
 							<FontAwesomeIcon icon={faMagnifyingGlass} />
