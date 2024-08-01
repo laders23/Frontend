@@ -1,4 +1,4 @@
-.footerContainer {
+.footer__container {
     width: 100%;
     height: 40vh;
     background-color: #32373F;
@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.footerContainer > .footCategory {
+.footer__container > .foot__category {
     width: 65%;
     height: 50%;
     display: flex;
@@ -19,7 +19,7 @@
     left: 6rem;
 }
 
-.footerContainer > .footCategory > .categoryBox {
+.footer__container > .foot__category > .category__box {
     width: 100%;
     height: 100%;
     display: flex;
@@ -28,18 +28,18 @@
     justify-content: flex-start;
 }
 
-.footerContainer > .tradeName {
+.footer__container > .trade__name {
     width: 63%;
     height: 50%;
 }
 
-.footerContainer > .tradeName > .nameContainer {
+.footer__container > .trade__name > .name__container {
     width: 98%;
     height: 100%;
     border-top: 1px solid #7F7F7F;
 }
 
-.footerContainer > .tradeName > .nameContainer > .tradeLogoBox {
+.footer__container > .trade__name > .name__container > .trade__logo__box {
     width: 50%;
     position: relative;
     left: 4.85rem;
@@ -49,49 +49,49 @@
     align-items: center;
 }
 
-.footerContainer > .tradeName > .nameContainer > .tradeLogoBox > a { 
+.footer__container > .trade__name > .name__container > .trade__logo__box > a { 
     white-space: nowrap;
 }
 
-.footerContainer > .tradeName > .nameContainer > .tradeLogoBox > a:nth-child(1) {
+.footer__container > .trade__name > .name__container > .trade__logo__box > a:nth-child(1) {
     font-size: 1.2rem;
 }
 
-.footerContainer > .tradeName > .nameContainer > .tradeLogoBox > a:not(:nth-child(1)) {
+.footer__container > .trade__name > .name__container > .trade__logo__box > a:not(:nth-child(1)) {
     margin-left: 0.7rem;
 }
 
-.footerContainer > .tradeName > .nameContainer > .certificateBox {
+.footer__container > .trade__name > .name__container > .certificate__box {
     display: flex;
     flex-direction: column;
     position: relative;
     left: 4.85rem;;
 }
 
-.footerContainer > .tradeName > .nameContainer > .certificateBox > span {
+.footer__container > .trade__name > .name__container > .certificate__box > span {
     color: #7F7F7F;
 }
 
 
-.footerContainer > .tradeName > .nameContainer > .tradeLogoBox > a {
+.footer__container > .trade__name > .name__container > .trade__logo__box > a {
     color: #7F7F7F;
 }
 
-.footerContainer > .footCategory > .categoryBox > .titleBox {
+.footer__container > .foot__category > .category__box > .title__box {
     margin-top: 2.5rem;
 }
 
-.footerContainer > .footCategory > .categoryBox > div > .cateTitle {
+.footer__container > .foot__category > .category__box > div > .cate__title {
     color: #FFFFFF;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.footerContainer > .footCategory > .categoryBox > div:not(:nth-child(1)) {
+.footer__container > .foot__category > .category__box > div:not(:nth-child(1)) {
     margin-top: 0.8rem;
 }
 
-.footerContainer > .footCategory > .categoryBox > div:not(:nth-child(1)) > a {
+.footer__container > .foot__category > .category__box > div:not(:nth-child(1)) > a {
     color: #BDBDB1;
 }
 

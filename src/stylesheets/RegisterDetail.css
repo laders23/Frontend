@@ -1,0 +1,118 @@
+.register__detail__form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__detail__form  > .reg__detail__box {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: bisque; */
+}
+
+.register__detail__form  > .reg__detail__box > .reg__detail__title {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__detail__swiper {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__detail__swiper > .swiper {
+    width: 100%;
+    height: 4rem;
+}
+
+/* .register__detail__form  > .reg__detail__box > .reg__detail__swiper > .swiper > .swiper-wrapper {
+    transition-timing-function: linear;
+} */
+
+.register__detail__form  > .reg__detail__box > .reg__detail__swiper > .swiper > .swiper-wrapper > .reg__detail__slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__detail__swiper > .swiper > .swiper-button-next {
+    display: none;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__detail__swiper > .swiper > .swiper-button-prev {
+    display: none;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__input__label {
+    width: 22rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__input__label:not(:nth-child(3)) {
+    margin-top: 3rem;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__input__label > .reg__detail__input {
+    width: 95%;
+    height: 100%;
+    padding: 0.65rem;
+    border-radius: 0.27rem;
+    border: 1px solid #475067;
+    font-size: 0.9rem;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__input__label > .reg__detail__input:hover {
+    border: 2px solid #8491a7;
+    background-color: #eff5ff;
+    cursor: pointer;
+}
+
+.register__detail__form  > .reg__detail__box > .reg__input__label > .reg__label__title {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.register__detail__form  > .reg__detail__box > .cert__reg__btn {
+    width: 22.3rem;
+    height: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F6FA;
+    border: 1px solid #d7dce5;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+    left: 0.15rem;
+    border-radius: 0.25rem;
+}
+
+.register__detail__form  > .reg__detail__box > .comp__reg__btn {
+    width: 22.3rem;
+    height: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #d7dce5;
+    background-color: #F5F6FA;
+    justify-content: center;
+    position: relative;
+    top: 4rem;
+    left: 0.15rem;
+    border-radius: 0.25rem;
+}

@@ -2,7 +2,6 @@ import '../stylesheets/Common.css';
 import '../stylesheets/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
-import logo from '../images/Preview.jpg';
 
 // function hideSearchBar() {
 //     return(
@@ -32,8 +31,8 @@ function Header() {
                 <ul className='ulContainer'>
                     <div className='logoBox'>
                         <li>
-                            <a href='#'>
-                                <img src={logo}></img>
+                            <a href='/'>
+                                <div className="logo">MeetPro</div>
                             </a>
                         </li>
                         <li>
@@ -46,7 +45,7 @@ function Header() {
                             <a href='#'>로그인</a>
                         </li>
                         <li className='linkItem'>
-                            <a href='#'>회원가입</a>
+                            <a href='/register'>회원가입</a>
                         </li>
                         <li className='linkItem'>
                             <a href='#'>마이페이지</a>

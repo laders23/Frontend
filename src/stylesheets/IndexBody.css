@@ -1,4 +1,4 @@
-.commuContainer {
+.commu__container {
     height: 47vh;
     width: 100%;
     display: flex;
@@ -7,8 +7,8 @@
     justify-content: flex-start;
 }
 
-.commuContainer > .commuTitleBox {
-    width: 65%;
+.commu__container > .commu__title__box {
+    width: 60%;
     height: 6rem;
     display: flex;
     flex-direction: row;
@@ -16,34 +16,36 @@
     justify-content: space-between;
 }
 
-.commuContainer > .commuTitleBox > .commuTitle > span:nth-child(1) {
+.commu__container > .commu__title__box > .commu__title > span:nth-child(1) {
     font-size: 1.25rem;
     font-weight: 900;
 }
 
-.commuContainer > .commuTitleBox > .commuLink > a {
+.commu__container > .commu__title__box > .commu__link > a {
     color: #121212;
     text-decoration: none;
+    position: relative;
+    right: 3rem;
 }
 
-.commuContainer > .commuPostBox {
+.commu__container > .commu__post__box {
     width: 65%;
     height: 70%;
 }
 
-.commuContainer > .commuPostBox > .swiper {
+.commu__container > .commu__post__box > .swiper {
     width: 90%;
     height: 100%;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide > .post__container {
     width: 65%;
     height: 15rem;
     border: 1px solid #DEDEDE;
@@ -54,19 +56,19 @@
     justify-content: center;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer:hover {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide > .post__container:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     cursor: pointer;
     transition: box-shadow 0.2s ease-in-out;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer > .postText {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide > .post__container > .post__text {
     font-size: 0.85rem;
     width: 70%;
     height: 8rem;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer > .postInfo {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide > .post__container > .post__info {
     width: 70%;
     height: 2.5rem;
     display: flex;
@@ -75,7 +77,7 @@
     justify-content: flex-start;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide > .postContainer > .postInfo > .postAge {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide > .post__container > .post__info > .post__age {
     background-color: #121212;
     width: 3rem;
     height: 1.8rem;
@@ -88,7 +90,7 @@
 }
 
 /* 이 아래 부터는 추후 수정해야함 */
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide:nth-child(1) > .postContainer > .postInfo > .postCompany {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide:nth-child(1) > .post__container > .post__info > .post__company {
     width: auto;
     padding: 0 0.5rem 0 0.5rem;
     height: 1.8rem;
@@ -102,7 +104,7 @@
     margin-left: 0.5rem;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide:nth-child(2) > .postContainer > .postInfo > .postCompany {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide:nth-child(2) > .post__container > .post__info > .post__company {
     width: auto;
     padding: 0 0.5rem 0 0.5rem;
     height: 1.8rem;
@@ -116,7 +118,7 @@
     margin-left: 0.5rem;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide:nth-child(3) > .postContainer > .postInfo > .postCompany {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide:nth-child(3) > .post__container > .post__info > .post__company {
     width: auto;
     padding: 0 0.5rem 0 0.5rem;
     height: 1.8rem;
@@ -133,16 +135,16 @@
 
 /* ====================이까지======================== */
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active > .postContainer {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active > .post__container {
     margin-left: 7rem;
 
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-next ~.swiper-slide > .postContainer {
+.commu__container > .commu__post__box > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-next ~.swiper-slide > .post__container {
     margin-right: 7rem;
 } 
 
-.commuContainer > .commuPostBox > .swiper > .swiper-button-prev {
+.commu__container > .commu__post__box > .swiper > .swiper-button-prev {
     --swiper-theme-color: #FFFFFF;
     --swiper-navigation-size: 1.5rem;
     background-color: #E6E6E8;
@@ -152,7 +154,7 @@
     border-radius: 10rem;
 }
 
-.commuContainer > .commuPostBox > .swiper > .swiper-button-next {
+.commu__container > .commu__post__box > .swiper > .swiper-button-next {
     --swiper-theme-color: #FFFFFF;
     --swiper-navigation-size: 1.5rem;
     background-color: #E6E6E8;
@@ -164,7 +166,7 @@
 
 /* ======================================================= */
 
-.chatContainer {
+.chat__container {
     height: 47vh;
     width: 100%;
     display: flex;
@@ -173,8 +175,8 @@
     justify-content: flex-start;
 }
 
-.chatContainer > .chatTitleBox {
-    width: 65%;
+.chat__container > .chat__title__box {
+    width: 60%;
     height: 6rem;
     display: flex;
     flex-direction: row;
@@ -182,38 +184,40 @@
     justify-content: space-between;
 }
 
-.chatContainer > .chatTitleBox > .chatTitle > span {
+.chat__container > .chat__title__box > .chat__title > span {
     font-size: 1.25rem;
     font-weight: 900;
 }
 
-.chatContainer > .chatTitleBox > .chatTitle > span > span {
+.chat__container > .chat__title__box > .chat__title > span > span {
     color: #8A91A5;
 }
 
-.chatContainer > .chatTitleBox > .chatLink > a {
+.chat__container > .chat__title__box > .chat__link > a {
     color: #121212;
     text-decoration: none;
+    position: relative;
+    right: 3rem;
 }
 
-.chatContainer > .chatRoomBox {
+.chat__container > .chat__room__box {
     width: 65%;
     height: 70%;
 }
 
-.chatContainer > .chatRoomBox > .swiper {
+.chat__container > .chat__room__box > .swiper {
     width: 90%;
     height: 100%;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container {
     width: 65%;
     height: 15rem;
     border: 1px solid #DEDEDE;
@@ -224,21 +228,21 @@
     justify-content: center;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatRoomTitle {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container > .chat__room__title {
     width: auto;
     height: 3rem;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatText {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container > .chat__text {
     font-size: 0.85rem;
     width: 70%;
     height: 3rem;
     margin-bottom: 0.8rem;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container > .chat__btn__box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,7 +250,7 @@
     height: 5rem;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox > .peopleNum {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container > .chat__btn__box > .people__num {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -255,7 +259,7 @@
     margin-bottom: 0.7rem;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox > .chatBtn {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container > .chat__btn__box > .chat__btn {
     width: 8rem;
     height: 2rem;
     background-color: #0064FF;
@@ -267,21 +271,21 @@
     color: #FFFFFF;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer > .chatBtnBox > .chatBtn:hover {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container > .chat__btn__box > .chat__btn:hover {
     background-color: #6CA1EF;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active > .chatRoomContainer {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active > .chat__room__container {
     margin-left: 7rem;
 
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-next ~.swiper-slide > .chatRoomContainer {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-next ~.swiper-slide > .chat__room__container {
     margin-right: 7rem;
 } 
 
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-button-prev {
+.chat__container > .chat__room__box > .swiper > .swiper-button-prev {
     --swiper-theme-color: #FFFFFF;
     --swiper-navigation-size: 1.5rem;
     background-color: #E6E6E8;
@@ -291,7 +295,7 @@
     border-radius: 10rem;
  }
 
- .chatContainer > .chatRoomBox > .swiper > .swiper-button-next {
+ .chat__container > .chat__room__box > .swiper > .swiper-button-next {
     --swiper-theme-color: #FFFFFF;
     --swiper-navigation-size: 1.5rem;
     background-color: #E6E6E8;
@@ -301,7 +305,7 @@
     border-radius: 10rem;
 }
 
-.chatContainer > .chatRoomBox > .swiper > .swiper-wrapper > .swiper-slide > .chatRoomContainer:hover {
+.chat__container > .chat__room__box > .swiper > .swiper-wrapper > .swiper-slide > .chat__room__container:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     cursor: pointer;
     transition: box-shadow 0.2s ease-in-out;
