@@ -14,7 +14,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /* background-color: bisque; */
 }
 
 .register__detail__form  > .reg__detail__box > .reg__detail__title {
@@ -34,10 +33,6 @@
     width: 100%;
     height: 4rem;
 }
-
-/* .register__detail__form  > .reg__detail__box > .reg__detail__swiper > .swiper > .swiper-wrapper {
-    transition-timing-function: linear;
-} */
 
 .register__detail__form  > .reg__detail__box > .reg__detail__swiper > .swiper > .swiper-wrapper > .reg__detail__slide {
     display: flex;
@@ -60,6 +55,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0.6rem;
 }
 
 .register__detail__form  > .reg__detail__box > .reg__input__label:not(:nth-child(3)) {
@@ -76,7 +72,7 @@
 }
 
 .register__detail__form  > .reg__detail__box > .reg__input__label > .reg__detail__input:hover {
-    border: 2px solid #8491a7;
+    border: 1px solid #8491a7;
     background-color: #eff5ff;
     cursor: pointer;
 }
@@ -100,6 +96,17 @@
     top: 2rem;
     left: 0.15rem;
     border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+
+.register__detail__form  > .reg__detail__box > .cert__reg__btn.enabled {
+   background-color: #4F66E9;
+   color: #FFFFFF;
+}
+
+.register__detail__form  > .reg__detail__box > .comp__reg__btn.enabled {
+    background-color: #4F66E9;
+   color: #FFFFFF;
 }
 
 .register__detail__form  > .reg__detail__box > .comp__reg__btn {
@@ -116,3 +123,10 @@
     left: 0.15rem;
     border-radius: 0.25rem;
 }
+
+.register__detail__form  > .reg__detail__box > .reg__input__label > .warning-alert {
+    color: #d64141;
+    margin: 0.3rem 0 0 0.1rem;
+    font-size: 0.8rem;
+}
+

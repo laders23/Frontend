@@ -133,7 +133,7 @@ function IndexBody() {
                     </span>
                 </div>
                 <div className='chat__link'>
-                    <a href='#'>바로가기
+                    <a href='/OpenChat'>바로가기
                     <FontAwesomeIcon icon={faCaretRight} />
                     </a>
                 </div> 
