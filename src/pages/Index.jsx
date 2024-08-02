@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slide from "../components/Slide";
+import Slide from "../components/Slide.index";
 import "../stylesheets/Index.css";
 
 function Index() {
