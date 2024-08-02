@@ -9,8 +9,6 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import "swiper/css"; //basic
 
-import { Link } from "react-router-dom";
-
 function IndexBody() {
 	return (
 		<>
