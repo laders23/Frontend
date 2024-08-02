@@ -6,6 +6,7 @@ import RegisterDetail from "./pages/RegisterDetail";
 import OpenChat from "./pages/OpenChat";
 import Mypage from "./pages/Mypage/App";
 import Community from "./pages/Community/App";
+import "/src/stylesheets/Common.css";
 
 function App() {
 	return (

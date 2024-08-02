@@ -1,0 +1,12 @@
+.logo__text {
+	color: white;
+	font-family: "Myanmar Khyay";
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
