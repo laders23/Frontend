@@ -9,4 +9,31 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+	}
+
+	&::before {
+		left: 0;
+		border-bottom: solid 1px var(--toss-blue);
+	}
+	&::after {
+		right: 0;
+		border-bottom: solid 1px white;
+	}
+
+	&:hover::before {
+		width: 50%;
+	}
+	&:hover::after {
+		width: 50%;
+	}
 }

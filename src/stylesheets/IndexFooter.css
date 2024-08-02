@@ -1,98 +1,113 @@
 .footer__container {
-    width: 100%;
-    height: 40vh;
-    background-color: #32373F;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	height: 40vh;
+	background-color: #32373f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .footer__container > .foot__category {
-    width: 65%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 6rem;
+	width: 65%;
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	left: 6rem;
 }
 
 .footer__container > .foot__category > .category__box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
 .footer__container > .trade__name {
-    width: 63%;
-    height: 50%;
+	width: 63%;
+	height: 50%;
 }
 
 .footer__container > .trade__name > .name__container {
-    width: 98%;
-    height: 100%;
-    border-top: 1px solid #7F7F7F;
+	width: 98%;
+	height: 100%;
+	border-top: 1px solid #7f7f7f;
 }
 
 .footer__container > .trade__name > .name__container > .trade__logo__box {
-    width: 50%;
-    position: relative;
-    left: 4.85rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	width: 50%;
+	position: relative;
+	left: 4.85rem;
+	height: 3rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.footer__container > .trade__name > .name__container > .trade__logo__box > a { 
-    white-space: nowrap;
+.footer__container > .trade__name > .name__container > .trade__logo__box > a {
+	white-space: nowrap;
 }
 
-.footer__container > .trade__name > .name__container > .trade__logo__box > a:nth-child(1) {
-    font-size: 1.2rem;
+.footer__container
+	> .trade__name
+	> .name__container
+	> .trade__logo__box
+	> a:nth-child(1) {
+	font-size: 1.2rem;
 }
 
-.footer__container > .trade__name > .name__container > .trade__logo__box > a:not(:nth-child(1)) {
-    margin-left: 0.7rem;
+.footer__container
+	> .trade__name
+	> .name__container
+	> .trade__logo__box
+	> a:not(:nth-child(1)) {
+	margin-left: 0.7rem;
 }
 
 .footer__container > .trade__name > .name__container > .certificate__box {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 4.85rem;;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 4.85rem;
 }
 
-.footer__container > .trade__name > .name__container > .certificate__box > span {
-    color: #7F7F7F;
+.footer__container
+	> .trade__name
+	> .name__container
+	> .certificate__box
+	> span {
+	color: #7f7f7f;
 }
-
 
 .footer__container > .trade__name > .name__container > .trade__logo__box > a {
-    color: #7F7F7F;
+	color: #7f7f7f;
 }
 
 .footer__container > .foot__category > .category__box > .title__box {
-    margin-top: 2.5rem;
+	margin-top: 2.5rem;
 }
 
 .footer__container > .foot__category > .category__box > div > .cate__title {
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    font-weight: 600;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
 .footer__container > .foot__category > .category__box > div:not(:nth-child(1)) {
-    margin-top: 0.8rem;
+	margin-top: 0.8rem;
 }
 
-.footer__container > .foot__category > .category__box > div:not(:nth-child(1)) > a {
-    color: #BDBDB1;
+.footer__container
+	> .foot__category
+	> .category__box
+	> div:not(:nth-child(1))
+	> a {
+	color: #bdbdb1;
 }
 
 /* #BDBDB1 */

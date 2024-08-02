@@ -66,7 +66,7 @@
 .linkBox > li > a {
 	color: white;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 16px;
 	text-decoration: none;
 	position: relative;
 }
@@ -106,4 +106,37 @@ li:nth-child(2) {
 .linkItem a:after {
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
+}
+
+.linkItem__login {
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+
+	&::before,
+	&::after {
+		content: "";
+		margin-bottom: -0.3rem;
+		border-bottom: solid 1px white;
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+
+	&::before {
+		left: 0;
+	}
+	&::after {
+		right: 0;
+	}
+
+	&:hover::before,
+	&:hover::after {
+		width: 50%;
+	}
 }
