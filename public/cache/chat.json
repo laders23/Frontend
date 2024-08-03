@@ -1,0 +1,38 @@
+[
+	{
+		"title": "금융",
+		"description": "경제/금융",
+		"max": "40",
+		"now": "3"
+	},
+	{
+		"title": "정치",
+		"description": "민주당",
+		"max": "300",
+		"now": "11"
+	},
+	{
+		"title": "정치",
+		"description": "국민의힘",
+		"max": "150",
+		"now": "23"
+	},
+	{
+		"title": "리그오브레전드",
+		"description": "게임",
+		"max": "250",
+		"now": "49"
+	},
+	{
+		"title": "인력사무소",
+		"description": "노가다",
+		"max": "100",
+		"now": "80"
+	},
+	{
+		"title": "취준",
+		"description": "취업",
+		"max": "100",
+		"now": "55"
+	}
+]
