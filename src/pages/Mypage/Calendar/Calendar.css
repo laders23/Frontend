@@ -1,26 +1,31 @@
 .calendar-wrapper {
-  width: 300px;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
+	width: 300px;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
 }
 
 .calendar {
-  width: 100%;
-  border-collapse: collapse;
+	width: 100%;
+	border-collapse: collapse;
 }
 
 .calendar th,
 .calendar td {
-  width: 14.28%;
-  padding: 10px 0;
-  text-align: center;
+	width: 14.28%;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 8px;
 }
 
 .calendar th {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 .calendar td.inactive {
-  color: #ccc;
+	color: #ccc;
+}
+.calendar td.today {
+	background-color: var(--toss-blue);
+	color: white;
 }

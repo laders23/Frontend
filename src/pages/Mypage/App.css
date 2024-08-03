@@ -1,193 +1,194 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.main-content {
+	width: 100%;
+	height: 90vh;
+	display: grid;
+	grid-template-rows: auto; /* 행은 하나만 가지면 됨 */
+	grid-template-columns: 1fr 3fr;
+	padding: 20px 0 0;
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-left: 30px;
-}
-
-.header nav {
-  display: flex;
-  align-items: center;
-}
-
-.header nav a {
-  margin-right: 60px;
-  color: black;
+	justify-content: center;
 }
 
 button {
-  width: 40px;
-  height: 20px;
-  border-radius: 5px;
-  background-color: rgb(223, 239, 255);
+	width: 40px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: rgb(223, 239, 255);
 }
 
 .section-title {
-  font-size: 1.3em;
-  font-weight: bold;
-  text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
 }
 
 .profile-icon img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid #000;
-  margin-right: 30px;
-}
-
-.main-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto;
-  grid-gap: 20px;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	margin-right: 30px;
 }
 
 .profile-section {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #ffffff;
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #ffffff;
 }
 
-.avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 2px solid #000;
+.mypage__profile__image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid var(--toss-blue);
 }
 
-.profile-info {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 30%;
-  align-items: center;
-  background-color: #f1f8ff;
-  margin: 10px 0;
-  border-radius: 10px;
-  padding: 20px;
-  border: 1px solid #000000;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+.mypage__profile__name {
+	font-size: 24px;
+	font-weight: bold;
+
+	margin-top: 10px;
 }
 
-.profile-detail {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 5px 0;
-  text-align: center;
+.mypage__profile-info__wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 30%;
+	align-items: center;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+	/* 수직 수평 */
+	margin: 10px 0;
+}
+
+.mypage__profile-detail {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/* 수직 수평 */
+	padding: 5px 0;
+
+	font-size: 16px;
+	font-weight: 600;
 }
 
 .edit-profile {
-  width: 60%;
-  height: 50px;
-  margin-top: 3%;
-  background-color: #f1f8ff;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1.2em;
-  cursor: pointer;
+	width: 60%;
+	height: 50px;
+	margin-top: 10px;
+	background-color: var(--toss-blue);
+	color: white;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+
+	&:hover {
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	}
+}
+
+.mypage__content__wrapper {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-rows: 1fr 2fr;
+	grid-template-columns: auto;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.mypage__content {
+	background-color: white;
+	border: 4px solid var(--toss-gray);
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	padding: 20px;
 }
 
 .chat-section {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  background-color: #f1f8ff;
-  border: 1px solid #000000;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
 }
 
 .chat-room {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+.mypage__chat-room__btn {
+	font-size: 14px;
+	font-weight: 600;
+	color: white;
+	background-color: var(--toss-blue);
+	width: 50px;
+	height: 30px;
+	transition: all 0.2s ease;
+
+	&:hover {
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	}
 }
 
 .matching-section {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-  background-color: #f1f8ff;
-  border: 1px solid #000000;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 10px;
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
 }
 
 .diary-section {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-color: #f1f8ff;
-  border: 1px solid #000000;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  height: 80%;
-  border-radius: 10px;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	height: 80%;
 }
 
 .posts-section {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  background-color: #f1f8ff;
-  border: 1px solid #000000;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  height: 80%;
-  border-radius: 10px;
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+	height: 80%;
 }
 
 .post {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .post-title {
-  font-weight: bold;
-  font-size: 1.1em;
+	font-weight: bold;
+	font-size: 1.1em;
 }
 
 .matching-record {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
 }
 
 .matching-record img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
 }
 
 .calendar {
-  text-align: center;
+	text-align: center;
 }
 
 .calendar table {
-  width: 100%;
-  margin-top: 10px;
+	width: 100%;
+	margin-top: 10px;
 }
