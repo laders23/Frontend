@@ -61,9 +61,10 @@
 }
 
 .post__text {
-	font-size: 0.85rem;
+	font-size: 16px;
 	width: 70%;
 	height: 8rem;
+	font-weight: 400;
 }
 
 .post__info {
@@ -88,6 +89,20 @@
 }
 
 /* 이 아래 부터는 추후 수정해야함 */
+.post__company {
+	width: auto;
+	padding: 0 0.5rem 0 0.5rem;
+	height: 1.8rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	color: #ffffff;
+	background-color: red;
+	margin-left: 0.5rem;
+}
+
 .commu__container
 	> .commu__post__box
 	> .swiper
@@ -274,7 +289,8 @@
 	> .swiper-slide
 	> .chat__room__container
 	> .chat__text {
-	font-size: 0.85rem;
+	font-size: 16px;
+	font-weight: 400;
 	width: 70%;
 	height: 3rem;
 	margin-bottom: 0.8rem;
