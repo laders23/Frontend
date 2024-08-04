@@ -1,12 +1,27 @@
 import "./Calendar.css";
 
+const MONTH = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December",
+];
+
 const Calendar = () => {
 	const daysOfWeek = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-	const today_day = new Date().getDate();
+	const date = new Date();
 
 	return (
 		<div className="calendar-wrapper">
-			<h3>July</h3>
+			<h3>{MONTH[new Date().getMonth() - 1]}</h3>
 			<table className="calendar">
 				<thead>
 					<tr>
@@ -25,7 +40,11 @@ const Calendar = () => {
 									<td
 										key={dayIndex}
 										className={
-											day > 31 ? "inactive" : day == today_day ? "today" : ""
+											day > 31
+												? "inactive"
+												: day == date.getDate()
+												? "today"
+												: ""
 										}
 									>
 										{day <= 31 ? day : ""}
