@@ -35,10 +35,10 @@ function Header() {
 							</div>
 						</li>
 						<li className="linkItem">
-							<Link to={"/"}>회원가입</Link>
+							<Link to={"register"}>회원가입</Link>
 						</li>
 						<li className="linkItem">
-							<Link to="/mypage">마이페이지</Link>
+							<Link to="mypage">마이페이지</Link>
 						</li>
 					</div>
 				</ul>

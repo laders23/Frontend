@@ -1,5 +1,3 @@
-import RegisterHeader from "../components/RegisterHeader";
-
 import "../stylesheets/Common.css";
 import "../stylesheets/Register.css";
 import kakaoLogo from "../images/kakao-logo.svg";
@@ -16,7 +14,6 @@ function Register() {
 	return (
 		<>
 			<div className="reg__all__container">
-				<RegisterHeader />
 				<div className="register__container">
 					<div className="register__box">
 						<div className="register__item">
