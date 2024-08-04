@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import "swiper/css"; //basic
 import { CommunitySlide, ChatSlide } from "../components/Slide.indexBody";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function IndexBody() {
 	const [communityData, setCommunityData] = useState([]);
@@ -58,10 +59,10 @@ function IndexBody() {
 						{/* <span></span>  옵션자리 */}
 					</div>
 					<div className="commu__link">
-						<a href="#">
+						<Link to={"/community"}>
 							바로가기
 							<FontAwesomeIcon icon={faCaretRight} />
-						</a>
+						</Link>
 					</div>
 				</div>
 				{communityData.length > 0 ? (
@@ -93,10 +94,10 @@ function IndexBody() {
 						</span>
 					</div>
 					<div className="chat__link">
-						<a href="/OpenChat">
+						<Link to={"/chat"}>
 							바로가기
 							<FontAwesomeIcon icon={faCaretRight} />
-						</a>
+						</Link>
 					</div>
 				</div>
 				{chatData.length > 0 ? (
