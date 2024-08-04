@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // React Router 사용
 import PostList from "./Post/PostList";
 import "./Community.css";
 import { FaSearch, FaSyncAlt } from "react-icons/fa";
@@ -27,210 +28,13 @@ const fetchedPosts = [
 		company: "KAKAO",
 		age: 32,
 	},
-	{
-		id: 3,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 15,
-		company: "Google",
-		age: 30,
-	},
-	{
-		id: 4,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Microsoft",
-		age: 29,
-	},
-	{
-		id: 5,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Amazon",
-		age: 29,
-	},
-	{
-		id: 6,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Apple",
-		age: 29,
-	},
-	{
-		id: 7,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Facebook",
-		age: 29,
-	},
-	{
-		id: 8,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Twitter",
-		age: 29,
-	},
-	{
-		id: 9,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 10,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 11,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 12,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 13,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 14,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 15,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 16,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 17,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 18,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 19,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
-	{
-		id: 20,
-		title: "미래에 대한 확신이 없어요",
-		content:
-			"현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
-		viewCount: 5300,
-		commentCount: 10,
-		likeCount: 17,
-		company: "Netflix",
-		age: 29,
-	},
 ];
 
 const Community = () => {
 	const [posts, setPosts] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
 	const postsPerPage = 8;
+	const history = useHistory(); // useHistory 훅 사용
 
 	useEffect(() => {
 		setPosts(fetchedPosts);
@@ -241,12 +45,15 @@ const Community = () => {
 	const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 	const totalPages = Math.ceil(posts.length / postsPerPage);
 
+	const handlePostClick = (postId) => {
+		history.push(`/post/${postId}`); // 상세 페이지로 이동
+	};
+
 	return (
 		<div className="community__container">
 			<h1>커뮤니티</h1>
 			<p className="community__subtitle">새로운 사람들과 소통을 시작하세요</p>
 			<div className="community__search-pagination">
-				{/* TODO : refresh 아이콘 누르면 새로고침 되도록 만들기 */}
 				<FaSyncAlt className="community__refresh-icon" />
 				<div className="community__search-bar">
 					<FaSearch className="community__search-icon" />
@@ -275,7 +82,7 @@ const Community = () => {
 				</div>
 			</div>
 			{currentPosts.length > 0 ? (
-				<PostList posts={currentPosts} />
+				<PostList posts={currentPosts} onPostClick={handlePostClick} /> // 클릭 핸들러 전달
 			) : (
 				<p>로딩 중...</p>
 			)}

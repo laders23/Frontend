@@ -1,16 +1,16 @@
-/* eslint-disable react/prop-types */
-import PostItem from "./PostItem";
+import React from 'react';
+import PostCard from './PostCard';
 
-const PostList = ({ posts }) => {
-	return (
-		<div>
-			{posts.length > 0 ? (
-				posts.map((post) => <PostItem key={post.id} post={post} />)
-			) : (
-				<p>게시물이 없습니다.</p>
-			)}
-		</div>
-	);
+const PostList = ({ posts, onPostClick }) => {
+    return (
+        <div>
+            {posts.map(post => (
+                <div key={post.id} onClick={() => onPostClick(post.id)}> {/* 클릭 핸들러 추가 */}
+                    <PostCard post={post} />
+                </div>
+            ))}
+        </div>
+    );
 };
 
 export default PostList;
