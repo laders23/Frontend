@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Slide from "../components/Slide.index";
 import "../stylesheets/Index.css";
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 function Index() {
 	const [proData, setProData] = useState([]);
@@ -35,10 +36,12 @@ function Index() {
 		<>
 			<div className="ad__container">
 				<div className="select__match__container">
+				<Link to="/experts">
 					<div className="select__match__btn">
 						<FontAwesomeIcon icon={faTag} />
 						고수 매칭
 					</div>
+					</Link>
 					<div className="select__match__btn">
 						<FontAwesomeIcon icon={faCity} />
 						업계별 매칭
