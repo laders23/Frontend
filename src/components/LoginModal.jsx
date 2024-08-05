@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Modal from "react-modal";
 import "../stylesheets/loginModal.css";
-import { KAKAO_LINK } from "../util";
+import { KAKAO_LINK, NAVER_LINK } from "../util";
 
 const customStyles = {
 	overlay: {
@@ -37,6 +37,10 @@ export default function LoginModal({ isModalOpen, modalToggle }) {
 		window.location.href = KAKAO_LINK;
 	}
 
+	function naverLoginHandler() {
+		window.location.href = NAVER_LINK;
+	}
+
 	return (
 		<Modal
 			style={customStyles}
@@ -60,7 +64,7 @@ export default function LoginModal({ isModalOpen, modalToggle }) {
 						카카오톡으로 로그인
 					</p>
 				</div>
-				<div className="login__button">
+				<div className="login__button" onClick={naverLoginHandler}>
 					<object
 						type="image/svg+xml"
 						data="/svg/naver_logo.svg"

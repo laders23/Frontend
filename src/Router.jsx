@@ -26,7 +26,10 @@ function App() {
 					<Route path="community" element={<Community />} />
 					<Route path="community/:id" element={<PostDetail />} />
 					<Route path="experts" element={<ExpertListPage />} />
-					<Route path="login/oauth2/code/kakao" element={<Redirection />} />
+					<Route
+						path="login/oauth2/code/:corporate"
+						element={<Redirection />}
+					/>
 				</Routes>
 			</Router>
 		</RecoilRoot>

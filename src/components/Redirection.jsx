@@ -6,11 +6,14 @@ import "../stylesheets/redirection.css";
 export default function Redirection() {
 	const navigate = useNavigate();
 
+	// console.log(window.location.pathname);
+
 	useEffect(() => {
 		axios
 			.get(`${import.meta.env.VITE_BACK_DEPLOY_URL}:8080/oauth-login`)
 			.then((response) => {
 				console.log(response);
+				console.log(response.data);
 
 				navigate("/");
 			});

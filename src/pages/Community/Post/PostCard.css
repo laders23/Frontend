@@ -15,16 +15,11 @@
 .post-card h2 {
 	font-size: 1.5em; /* 제목 폰트 크기 */
 	margin: 0 0 8px; /* 제목 아래 여백 */
+	font-weight: bold;
 }
 
 .post-card p {
 	font-size: 1em; /* 본문 폰트 크기 */
-	color: #333; /* 본문 텍스트 색상 */
+	color: #777; /* 본문 텍스트 색상 */
 	line-height: 1.5; /* 줄 간격 */
-}
-
-.post-card .post-date {
-	font-size: 0.9em; /* 날짜 폰트 크기 */
-	color: #777; /* 날짜 색상 */
-	margin-top: 8px; /* 위쪽 여백 */
 }

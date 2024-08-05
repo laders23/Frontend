@@ -84,11 +84,7 @@ const PostDetail = () => {
 	return (
 		<div className="post-detail">
 			<div className="post-header">
-				<img
-					src="/public/images/profile1.jpg"
-					alt="Profile"
-					className="profile-pic"
-				/>
+				<img src="/images/profile1.jpg" alt="Profile" className="profile-pic" />
 				<div className="post-info">
 					<span>{post.company}</span>
 					<span>
