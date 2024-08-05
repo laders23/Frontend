@@ -9,26 +9,28 @@ import Community from "./pages/Community/Community";
 import ExpertListPage from "./pages/ExpertMatching/ExpertListPage"; // 경로 확인
 import PostDetail from "./pages/Community/Post/PostDetail";
 import { RecoilRoot } from "recoil";
-import './stylesheets/Common.css';
+import "./stylesheets/Common.css";
+import Redirection from "./components/Redirection";
 
 function App() {
-  return (
-    <RecoilRoot>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="register" element={<Register />} />
-          <Route path="registerDetail" element={<RegisterDetail />} />
-          <Route path="chat" element={<OpenChat />} />
-          <Route path="mypage" element={<Mypage />} />
-          <Route path="community" element={<Community />} />
-          <Route path="community/:id" element={<PostDetail />} />
-          <Route path="experts" element={<ExpertListPage />} />
-        </Routes>
-      </Router>
-    </RecoilRoot>
-  );
+	return (
+		<RecoilRoot>
+			<Router>
+				<Header />
+				<Routes>
+					<Route path="/" element={<MainPage />} />
+					<Route path="register" element={<Register />} />
+					<Route path="registerDetail" element={<RegisterDetail />} />
+					<Route path="chat" element={<OpenChat />} />
+					<Route path="mypage" element={<Mypage />} />
+					<Route path="community" element={<Community />} />
+					<Route path="community/:id" element={<PostDetail />} />
+					<Route path="experts" element={<ExpertListPage />} />
+					<Route path="login/oauth2/code/kakao" element={<Redirection />} />
+				</Routes>
+			</Router>
+		</RecoilRoot>
+	);
 }
 
 export default App;
