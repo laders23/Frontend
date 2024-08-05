@@ -1,0 +1,129 @@
+.expert-list-page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.expert-filter-container {
+  width: 25%;
+  position: sticky;
+  top: 40px;
+  margin-right: 20px;
+}
+
+.expert-cards-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.expert-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.expert-card:hover {
+  background-color: #f1f8ff;
+  cursor: pointer;
+}
+
+.expert-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.expert-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.expert-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.expert-card p {
+  margin: 0.5rem 0;
+  color: #666;
+  text-align: left;
+}
+
+.expert-card .rating {
+  color: #f1c40f;
+  font-size: 1rem;
+  display: flex;
+  gap: 1px;
+}
+
+.stars-container {
+  display: flex;
+}
+
+.stars-container .fa-icon {
+  margin-right: 2px;
+}
+
+.favorite-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.favorite-icon .fa-icon {
+  transition: color 0.3s;
+}
+
+.favorite-icon .fa-icon.fa-heart-empty {
+  color: gray;
+}
+
+.favorite-icon .fa-icon.fa-heart-filled {
+  color: red;
+}
+
+.expert-card .description {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.3s, background-color 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background-color: #555;
+}
