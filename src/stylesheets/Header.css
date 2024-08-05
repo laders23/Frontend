@@ -39,7 +39,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid var(--toss-blue);
+	border: 2px solid #f1f8ff;
 	border-radius: 0.3rem;
 }
 
