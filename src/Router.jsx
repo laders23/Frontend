@@ -24,7 +24,7 @@ function App() {
           <Route path="mypage" element={<Mypage />} />
           <Route path="community" element={<Community />} />
           <Route path="community/:id" element={<PostDetail />} />
-          <Route path="experts" element={<ExpertListPage />} /> {/* 수정된 부분 */}
+          <Route path="experts" element={<ExpertListPage />} />
         </Routes>
       </Router>
     </RecoilRoot>
