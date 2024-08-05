@@ -1,7 +1,57 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import './PostDetail.css'; // CSS 파일 import
-import PostCard from './PostCard'; // PostCard import
+import './PostDetail.css';
+import PostCard from './PostCard';
+
+const fetchedPosts = [
+    {
+        id: 1,
+        title: "직속 선배랑 밥 꿀팁 좀요",
+        content: "오늘 회사에서 직속선배랑 같이 밥을 먹는데 제가 소심한 성격이라서 말을 잘 못걸겠습니다. 이럴때 아이스 브레이킹을 하는 방법 좀 알려주세요ㅠㅠ",
+        viewCount: 3000,
+        commentCount: 2,
+        likeCount: 3,
+        company: "NAVER",
+        age: 28,
+    },
+    {
+        id: 2,
+        title: "미래에 대한 확신이 없어요",
+        content: "현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
+        viewCount: 1200,
+        commentCount: 1,
+        likeCount: 0,
+        company: "KAKAO",
+        age: 32,
+    },{
+        id: 3,
+        title: "미래에 대한 확신이 없어요",
+        content: "현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
+        viewCount: 1200,
+        commentCount: 1,
+        likeCount: 0,
+        company: "KAKAO",
+        age: 32,
+    },{
+        id: 4,
+        title: "미래에 대한 확신이 없어요",
+        content: "현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
+        viewCount: 1200,
+        commentCount: 1,
+        likeCount: 0,
+        company: "KAKAO",
+        age: 32,
+    },{
+        id: 5,
+        title: "미래에 대한 확신이 없어요",
+        content: "현재 컴퓨터 개발 업계에서 종사하고 있는 3년차 개발자 입니다. 많은 것들을 배우고 있지만 미래에 대해서 아직까지 확신이 없는 상태입니다. 만나서 고민상담 해주실 인생 선배님 찾습니다.",
+        viewCount: 1200,
+        commentCount: 1,
+        likeCount: 0,
+        company: "KAKAO",
+        age: 32,
+    },
+];
 
 const PostDetail = () => {
     const { id } = useParams();
@@ -10,20 +60,8 @@ const PostDetail = () => {
     const [newComment, setNewComment] = useState("");
 
     useEffect(() => {
-        const fetchedPost = {
-            id,
-            title: "스타트업 관련해서 하나만 더 질문드리겠습니다!",
-            content: `
-                앞선 게시글에 댓글 달아주신 분들 너무 감사합니다.
-                '스타트업은 급박할 수 있고 월급도 제대로 못 나올 수도 있다'가 스타트업이 위험한 이유라고 정리할 수 있을 것 같네요.
-
-                제 입장에서 스타트업이 괜찮은 것 같은 이유를 정리해봤는데 이에 대해서도 고견 남겨주시면 감사하겠습니다.
-
-                1. 유저보수를 하는 게 아닌, 기획부터 개발까지 해볼 수 있다.
-                2. 아하! 지금 취업이 잘 안 되는 말이 여기저기서 들려옵니다. 솔직히 저로선 대기업 신입, 괜찮은 서비스 기업 신입이...
-            `,
-        };
-        setPost(fetchedPost);
+        const foundPost = fetchedPosts.find(post => post.id === parseInt(id));
+        setPost(foundPost);
     }, [id]);
 
     const handleCommentSubmit = (e) => {
@@ -39,13 +77,12 @@ const PostDetail = () => {
     return (
         <div className="post-detail">
             <div className="post-header">
-                <img src="프로필사진URL" alt="Profile" className="profile-pic" /> {/* 프로필 사진 추가 */}
+                <img src="프로필사진URL" alt="Profile" className="profile-pic" />
                 <div className="post-info">
-                    <span>과카</span>
-                    <span>⚡ 43 · 약 10시간 전 · 👁️ 303 · 수정됨</span>
+                    <span>{post.company}</span>
+                    <span>⚡ {post.age}세 · 약 10시간 전 · 👁️ {post.viewCount} · 수정됨</span>
                 </div>
             </div>
-            <PostCard post={post} />
             <h1>{post.title}</h1>
             <p>{post.content.split('\n').map((line, index) => (
                 <span key={index}>
